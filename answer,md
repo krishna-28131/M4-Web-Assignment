@@ -1,0 +1,157 @@
+# Web Application – Basic Concepts
+
+## Q1. Role of Frontend (FE)
+
+Frontend is the part of a web application that the user directly sees and uses. It focuses on how the application looks and how users interact with it.
+
+### User Interface
+
+* Frontend is responsible for designing the layout of the website using HTML, CSS, and JavaScript.
+* It controls buttons, forms, text, images, colors, and overall page structure.
+* A good frontend makes the website attractive, clean, and easy to understand.
+
+### User Interaction
+
+* Frontend handles all user actions like clicking buttons, filling forms, scrolling pages, and typing data.
+* It gives quick responses to users, such as showing error messages or loading animations.
+* It improves user experience by making the application smooth and responsive.
+
+### Communication with Backend
+
+* Frontend sends requests to the backend to get or send data.
+* It uses APIs and HTTP/HTTPS for communication.
+* Frontend only displays data and never directly accesses the database.
+
+---
+
+## Q2. Role of Backend (BE)
+
+Backend is the server-side part of a web application. It works behind the scenes and handles all logic, data, and security-related tasks.
+
+### Server-Side Processing
+
+* Backend receives requests from the frontend and processes them.
+* It applies rules, validations, and calculations based on application needs.
+* After processing, it sends the correct response back to the frontend.
+
+### Database Handling
+
+* Backend connects with the database to store and retrieve data.
+* It manages user data, product details, orders, and other information.
+* Direct database access is never given to users for security reasons.
+
+### Security and Authentication
+
+* Backend manages user login, signup, and authentication.
+* It checks user permissions before allowing access to data.
+* It protects the system from attacks like unauthorized access and data theft.
+
+---
+
+## Q3. Business Logic
+
+Business Logic refers to the main rules of an application that decide how the system should work. It represents real-world business rules converted into software logic.
+
+Business logic ensures that the application behaves correctly according to business requirements.
+
+### Real-World Examples
+
+1. **Online Shopping Website**
+
+   * Calculating total price including discounts, tax, and delivery charges.
+   * Allowing checkout only if products are available in stock.
+
+2. **Banking Application**
+
+   * Checking account balance before allowing money transfer.
+   * Applying daily withdrawal limits and service charges.
+
+3. **Online Exam System**
+
+   * Allowing students to attempt exams only during a fixed time period.
+   * Automatically calculating marks based on answers.
+
+---
+
+## Q4. Client–Server Model
+
+The Client–Server Model is a system where work is divided between two parts: client and server. Both communicate with each other to run a web application.
+
+### Client
+
+* Client is usually a web browser or mobile application.
+* It shows the user interface and collects user input.
+* It sends requests to the server and displays the response.
+
+### Server
+
+* Server hosts the backend application.
+* It processes client requests, applies business logic, and manages the database.
+* It sends responses back to the client.
+
+### Communication Process
+
+* Communication happens through HTTP or HTTPS.
+* Client sends a request and server sends a response.
+* This request–response cycle continues until the task is completed.
+
+```
+Client  →  Request  →  Server
+Client  ←  Response ←  Server
+```
+
+---
+
+## Q5. Three-Tier Architecture
+
+Three-Tier Architecture is a common design pattern used in web applications. It divides the application into three separate layers.
+
+### Presentation Layer
+
+* This is the frontend layer.
+* It handles user interface and user interaction.
+* Examples include web pages and mobile app screens.
+
+### Application (Business) Layer
+
+* This layer contains business logic.
+* It processes data and applies rules.
+* It connects the presentation layer with the data layer.
+
+### Data Layer
+
+* This layer handles data storage.
+* It includes databases and data access logic.
+* It ensures data is stored securely.
+
+### Why Three-Tier Architecture is Used
+
+* Makes the application easier to maintain.
+* Improves scalability and performance.
+* Enhances security by separating concerns.
+
+---
+
+## Q6. JavaScript as a Backend Language
+
+JavaScript is widely used as a backend language because it is fast, flexible, and has a large developer community.
+
+### Performance
+
+* JavaScript follows an event-driven and non-blocking approach.
+* It handles multiple requests efficiently.
+* Suitable for real-time applications like chat apps.
+
+### Ecosystem
+
+* JavaScript has a huge ecosystem with many ready-to-use libraries.
+* Developers can use the same language for frontend and backend.
+* This reduces development time and effort.
+
+### Popular Backend Frameworks
+
+* **Node.js** – JavaScript runtime for server-side development.
+* **Express.js** – Simple and flexible backend framework.
+* **NestJS** – Used for large and structured applications.
+
+JavaScript helps in building fast, scalable, and modern web applications.
