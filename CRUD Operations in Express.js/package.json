@@ -1,0 +1,15 @@
+{
+  "name": "student-crud-express",
+  "version": "1.0.0",
+  "description": "Student Management System using Express and fs module",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
