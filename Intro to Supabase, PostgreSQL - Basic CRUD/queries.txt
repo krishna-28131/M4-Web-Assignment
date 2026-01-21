@@ -1,0 +1,95 @@
+STEP 1: CREATE TABLE
+
+CREATE TABLE students (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT UNIQUE NOT NULL,
+  age INTEGER,
+  course TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Output:
+Success. No rows returned
+
+
+STEP 2: INSERT DATA
+
+INSERT INTO students (name, email, age, course)
+VALUES
+('Rahul Sharma', 'rahul@gmail.com', 22, 'Full Stack Development'),
+('Anjali Verma', 'anjali@gmail.com', 19, 'Data Science'),
+('Amit Kumar', 'amit@gmail.com', 25, 'Full Stack Development'),
+('Priya Singh', 'priya@gmail.com', 21, 'Backend Development'),
+('Rohit Mehta', 'rohit@gmail.com', 18, 'Data Science');
+
+Output:
+Success. No rows returned
+
+
+STEP 3: READ DATA
+
+Query 1: Fetch all students
+SELECT * FROM students;
+
+Output:
+Rows returned (5 rows)
+
+
+Query 2: Fetch students older than 20
+SELECT * FROM students WHERE age > 20;
+
+Output:
+Rows returned
+
+
+Query 3: Fetch only name and email
+SELECT name, email FROM students;
+
+Output:
+Rows returned
+
+
+Query 4: Fetch students enrolled in a specific course
+SELECT * FROM students WHERE course = 'Data Science';
+
+Output:
+Rows returned
+
+
+STEP 4: UPDATE DATA
+
+Query 1: Update age of one student
+UPDATE students
+SET age = 23
+WHERE id = 1;
+
+Output:
+Success. No rows returned
+
+
+Query 2: Update course for all students enrolled in one course
+UPDATE students
+SET course = 'Advanced Data Science'
+WHERE course = 'Data Science';
+
+Output:
+Success. No rows returned
+
+
+STEP 5: DELETE DATA
+
+Query 1: Delete one student using id
+DELETE FROM students
+WHERE id = 5;
+
+Output:
+Success. No rows returned
+
+
+Query 2: Delete all students below a certain age
+DELETE FROM students
+WHERE age < 20;
+
+Output:
+Success. No rows returned
